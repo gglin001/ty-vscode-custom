@@ -1,7 +1,7 @@
 # ty extension for Visual Studio Code
 
 > **Notice:** This repository is a customized build of the upstream ty VS Code
-> extension. Some chganges will be listed here(TODO).
+> extension. Changes will be listed here(TODO).
 
 ---
 
