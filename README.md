@@ -1,16 +1,21 @@
 # ty extension for Visual Studio Code
 
 > **Notice:** This repository is a customized build of the upstream ty VS Code
-> extension. Changes will be listed here(TODO).
+> extension.
 
-working with config(with `pixi`)
+Supported `settings.json`
 
 ```jsonc
-  // needs `pixi g i ty`
+{
+  // thies ext is not bundled with `ty` exe
   "ty.importStrategy": "fromEnvironment",
+  // works with pixi for example, it will use the first valied path
   "ty.interpreter": [
     "${workspaceFolder}/.pixi/envs/default/bin/python",
+    "${workspaceFolder}/../.pixi/envs/default/bin/python",
+    "${workspaceFolder}/../../.pixi/envs/default/bin/python",
   ],
+}
 ```
 
 ---
